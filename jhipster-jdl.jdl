@@ -1,0 +1,43 @@
+
+entity Course {
+	name String,
+    phoneNumber String,
+    email String
+}
+
+entity Lesson {
+	name String,
+    desc String
+    price BigDecimal
+}
+
+entity Customer {
+	firstName String,
+    lastName String,
+    phoneNumber String,
+    email String
+}
+
+entity Address {
+	streetAddress String,
+	postalCode String,
+	city String,
+	stateProvince String
+    country String
+}
+
+relationship OneToMany {
+	Course to Lesson{course},
+    Customer to Lesson{Customer}
+}
+
+relationship OneToOne {
+	Customer{address} to Address
+    Course{address} to Address
+}
+
+paginate Course, Lesson, Customer with infinite-scroll
+
+paginate Course, Lesson, Customer with pagination
+
+service all with serviceImpl

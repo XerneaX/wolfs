@@ -42,6 +42,8 @@
     "jwtSecretKey": "ZjY4YjM1NGNhODI2ODhjYzdkYjBkNTVmM2NhNDU5Yjk4NDY4YTVhODA2Nzc0NGMwNDA5NmZhZGJiNTIwY2RmODNiMTA5NDE2NmVhNGNmZGEzYjNiYzcyNWRmZWVmZGMzZjg5ZjZiMjM5MDc2MDQxNjYwMDk4YTA1M2IxZTc1ZjY=",
     "devServerPort": 9060,
     "clientPackageManager": "npm",
-    "languages": ["tr"]
+    "languages": ["tr"],
+    "entities": ["Course", "Lesson", "Customer", "Address"],
+    "lastLiquibaseTimestamp": 1628634698000
   }
 }

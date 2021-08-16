@@ -48,6 +48,12 @@ public class CacheConfiguration {
             createCache(cm, com.kurslarvadisi.wolfsvalley.domain.User.class.getName());
             createCache(cm, com.kurslarvadisi.wolfsvalley.domain.Authority.class.getName());
             createCache(cm, com.kurslarvadisi.wolfsvalley.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.kurslarvadisi.wolfsvalley.domain.Course.class.getName());
+            createCache(cm, com.kurslarvadisi.wolfsvalley.domain.Course.class.getName() + ".lessons");
+            createCache(cm, com.kurslarvadisi.wolfsvalley.domain.Lesson.class.getName());
+            createCache(cm, com.kurslarvadisi.wolfsvalley.domain.Customer.class.getName());
+            createCache(cm, com.kurslarvadisi.wolfsvalley.domain.Customer.class.getName() + ".lessons");
+            createCache(cm, com.kurslarvadisi.wolfsvalley.domain.Address.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
